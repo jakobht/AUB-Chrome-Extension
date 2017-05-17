@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    
+    "name": "Aalborg University Library Remote Access",
+    "description": "This extension gives easy remote access to publications for users at Aalborg University Library",
+    "version": "1.0",
+    
+    // icons from: http://www.flaticon.com/free-icon/library_23715
+    "icons": {
+        "16": "icon/library16.png",
+        "24": "icon/library24.png",
+        "32": "icon/library32.png",
+        "64": "icon/library64.png",
+        "128": "icon/library128.png",
+        "256": "icon/library256.png",
+        "512": "icon/library512.png"
+    },
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab",
+        "http://content.aub.aau.dk/"
+    ]
+}
