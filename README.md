@@ -12,3 +12,6 @@ To install:
 
 ## Use
 If you are on a page where AUB provides remote access simply click on the extension icon, and you will be send to the page where you can download the material. 
+
+## Credits
+Icon made by [icomoon](http://www.flaticon.com/authors/icomoon) from www.flaticon.com
