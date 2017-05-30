@@ -20,6 +20,6 @@
     },
     "permissions": [
         "activeTab",
-        "http://content.aub.aau.dk/"
+        "https://content.aub.aau.dk/"
     ]
 }

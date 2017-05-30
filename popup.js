@@ -7,7 +7,7 @@ chrome.tabs.query({'active': true}, function(tabs) {
     var tab = tabs[0];
 
     var url = tab.url;
-    var testRequest = new Request("http://content.aub.aau.dk/zorac/zoracjson.php?&url=" + url);
+    var testRequest = new Request("https://content.aub.aau.dk/zorac/zoracjson.php?&url=" + url);
     renderStatus('Looking up');
     fetch(testRequest).then(function (response) {
         return response.json();
@@ -16,7 +16,7 @@ chrome.tabs.query({'active': true}, function(tabs) {
         console.log(body.proxy);
         if(body.proxy == 1){
             renderStatus("Redirecting");
-            var newurl = 'http://zorac.aub.aau.dk/login?url=' + url;
+            var newurl = 'https://login.zorac.aub.aau.dk/login?qurl=' + encodeURIComponent(url);
             chrome.tabs.update(tab.id, {url: newurl});
         } else {
             renderStatus("No access");
